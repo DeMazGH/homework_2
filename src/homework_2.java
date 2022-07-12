@@ -20,6 +20,16 @@ public class homework_2 {
         System.out.println("Разница в весе бойцов составляет " + boxerWeightDifference + " кг.");
         //----------------------------
 
+        // Task 3 --------------------
+        int bananaWeight = 80;
+        int milkWeight = 105;
+        int iceCreamWeight = 100;
+        int eggWeight = 70;
+        int breakfastWeight = 5 * bananaWeight + 2 * milkWeight + 2 * iceCreamWeight + 4 * eggWeight;
+        double breakfastWeightInKg = breakfastWeight * 0.001;
+        System.out.println("Общий вес завтрака " + breakfastWeightInKg + " кг.");
+        //----------------------------
+
 
     }
 }

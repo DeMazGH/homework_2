@@ -16,7 +16,7 @@ public class homework_2 {
         float weightOfTheSecondBoxer = 82.7f;
         float totalWeightOfBoxers = weightOfTheFirstBoxer + weightOfTheSecondBoxer;
         System.out.println("Общий вес боксеров " + totalWeightOfBoxers + " кг.");
-        float boxerWeightDifference = weightOfTheSecondBoxer - weightOfTheFirstBoxer;
+        float boxerWeightDifference = Math.abs(weightOfTheFirstBoxer - weightOfTheSecondBoxer);
         System.out.println("Разница в весе бойцов составляет " + boxerWeightDifference + " кг.\n");
         //----------------------------
 
@@ -31,12 +31,11 @@ public class homework_2 {
         //----------------------------
 
         // Task 4 --------------------
-        int weightLossInKg = 7;
-        int weightLossInGram = weightLossInKg * 1000;
-        int perDayWeightLoss = 250;
-        int dayToLostWeightMin = weightLossInGram / perDayWeightLoss;
-        perDayWeightLoss = 500;
-        int dayToLostWeightMax = weightLossInGram / perDayWeightLoss;
+        double weightLoss = 7;
+        double perDayWeightLoss = 0.25;
+        int dayToLostWeightMax = (int)Math.ceil(weightLoss / perDayWeightLoss);
+        perDayWeightLoss = 0.5;
+        int dayToLostWeightMin = (int)Math.ceil(weightLoss / perDayWeightLoss);
         int averageWeightLost = (dayToLostWeightMin + dayToLostWeightMax) / 2;
         System.out.println("Минимальное количество дней для снижения веса - " + dayToLostWeightMin + ".");
         System.out.println("Максимальное количество дней для снижения веса - " + dayToLostWeightMax + ".");

@@ -12,6 +12,14 @@ public class homework_2 {
         //----------------------------
 
         // Task 2 --------------------
+        float weightOfTheFirstBoxer = 78.2f;
+        float weightOfTheSecondBoxer = 82.7f;
+        float totalWeightOfBoxers = weightOfTheFirstBoxer + weightOfTheSecondBoxer;
+        System.out.println("Общий вес боксеров " + totalWeightOfBoxers + " кг.");
+        float boxerWeightDifference = Math.abs(weightOfTheFirstBoxer - weightOfTheSecondBoxer);
+        System.out.println("Разница в весе бойцов составляет " + boxerWeightDifference + " кг.");
+        //----------------------------
+
 
     }
 }

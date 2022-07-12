@@ -17,7 +17,7 @@ public class homework_2 {
         float totalWeightOfBoxers = weightOfTheFirstBoxer + weightOfTheSecondBoxer;
         System.out.println("Общий вес боксеров " + totalWeightOfBoxers + " кг.");
         float boxerWeightDifference = weightOfTheSecondBoxer - weightOfTheFirstBoxer;
-        System.out.println("Разница в весе бойцов составляет " + boxerWeightDifference + " кг.");
+        System.out.println("Разница в весе бойцов составляет " + boxerWeightDifference + " кг.\n");
         //----------------------------
 
         // Task 3 --------------------
@@ -27,7 +27,20 @@ public class homework_2 {
         int eggWeight = 70;
         int breakfastWeight = 5 * bananaWeight + 2 * milkWeight + 2 * iceCreamWeight + 4 * eggWeight;
         double breakfastWeightInKg = breakfastWeight * 0.001;
-        System.out.println("Общий вес завтрака " + breakfastWeightInKg + " кг.");
+        System.out.println("Общий вес завтрака " + breakfastWeightInKg + " кг.\n");
+        //----------------------------
+
+        // Task 4 --------------------
+        int weightLossInKg = 7;
+        int weightLossInGram = weightLossInKg * 1000;
+        int perDayWeightLoss = 250;
+        int dayToLostWeightMin = weightLossInGram / perDayWeightLoss;
+        perDayWeightLoss = 500;
+        int dayToLostWeightMax = weightLossInGram / perDayWeightLoss;
+        int averageWeightLost = (dayToLostWeightMin + dayToLostWeightMax) / 2;
+        System.out.println("Минимальное количество дней для снижения веса - " + dayToLostWeightMin + ".");
+        System.out.println("Максимальное количество дней для снижения веса - " + dayToLostWeightMax + ".");
+        System.out.println("Среднее количество дней для снижения веса - " + averageWeightLost + ".\n");
         //----------------------------
 
 

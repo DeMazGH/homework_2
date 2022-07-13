@@ -55,17 +55,18 @@ public class homework_2 {
         int salaryPerMonthMasha = 67760;
         int salaryPerMonthDenis = 83690;
         int salaryPerMonthKristina = 76230;
-        int newSalaryPerMonthMasha = salaryPerMonthMasha + salaryPerMonthMasha * 10 / 100;
-        int newSalaryPerMonthDenis = salaryPerMonthDenis + salaryPerMonthDenis * 10 / 100;
-        int newSalaryPerMonthKristina = salaryPerMonthKristina + salaryPerMonthKristina * 10 / 100;
+
+        int newSalaryPerMonthMasha = (int) (salaryPerMonthMasha + salaryPerMonthMasha / (100 * 1.0) * 10);
+        int newSalaryPerMonthDenis = (int) (salaryPerMonthDenis + salaryPerMonthDenis / (100 * 1.0) * 10);
+        int newSalaryPerMonthKristina = (int) (salaryPerMonthKristina + salaryPerMonthKristina / (100 * 1.0) * 10);
         System.out.println("Маша теперь получает " + newSalaryPerMonthMasha +
                 " рублей в месяц. " + "Годовой доход вырос на "
-                + (newSalaryPerMonthMasha * 12 - salaryPerMonthMasha * 12) + " рублей.");
+                + ((newSalaryPerMonthMasha - salaryPerMonthMasha) * 12) + " рублей.");
         System.out.println("Денис теперь получает " + newSalaryPerMonthDenis +
                 " рублей в месяц. " + "Годовой доход вырос на " +
-                (newSalaryPerMonthDenis * 12 - salaryPerMonthDenis * 12) + " рублей.");
+                ((newSalaryPerMonthDenis - salaryPerMonthDenis) * 12) + " рублей.");
         System.out.println("Кристина теперь получает " + newSalaryPerMonthKristina +
                 " рублей в месяц. " + "Годовой доход вырос на " +
-                (newSalaryPerMonthKristina * 12 - salaryPerMonthKristina * 12) + " рублей.");
+                ((newSalaryPerMonthKristina - salaryPerMonthKristina) * 12) + " рублей.");
     }
 }

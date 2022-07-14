@@ -5,6 +5,8 @@ public class homework_2 {
         task3();
         task4();
         task5();
+        task6();
+
     }
 
     public static void task1() {
@@ -67,6 +69,26 @@ public class homework_2 {
                 ((newSalaryPerMonthDenis - salaryPerMonthDenis) * 12) + " рублей.");
         System.out.println("Кристина теперь получает " + newSalaryPerMonthKristina +
                 " рублей в месяц. " + "Годовой доход вырос на " +
-                ((newSalaryPerMonthKristina - salaryPerMonthKristina) * 12) + " рублей.");
+                ((newSalaryPerMonthKristina - salaryPerMonthKristina) * 12) + " рублей.\n");
+    }
+
+    public static void task6() {
+        //Задача 6
+        //Объявите целочисленные переменные a = 12, b = 27, c = 44, d = 15, e = 9.
+        //Вычислите выражение a * (b + (c - d * e)) и присвойте его результат переменной result.
+        //Инвертируйте результат (значение в переменной result), преобразовав его в вариант с противоположным значением
+        // (отрицательное -> положительное, положительное -> отрицательное).
+        //Выведите (напечатайте) результат в консоль.
+
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+
+        int result = a * (b + (c - d  * e));
+        result = result * -1;
+
+        System.out.println(result);
     }
 }
